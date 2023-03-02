@@ -1,10 +1,12 @@
 .form {
   max-width: 60rem;
   margin: 0 auto;
+
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
-  margin-top: 4rem;
-  background-color: rgb(173, 180, 187);
+  margin-top: 8rem;
+  background-color: rgb(217, 232, 245);
   padding: 1rem 2rem;
   font-size: 2rem;
   font-weight: bold;
@@ -42,6 +44,6 @@
 
 @media (max-width: 550px) {
   .form {
-    margin: 1rem;
+    margin: 6rem 1rem;
   }
 }

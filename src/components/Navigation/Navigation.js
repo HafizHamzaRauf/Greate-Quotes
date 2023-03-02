@@ -1,17 +1,34 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 import classes from "./Navigation.module.css";
 const Navigation = function ({ children }) {
+  const [active, setActive] = useState(true);
+  const changeActiveHandler = () => {
+    setActive((prev) => !prev);
+  };
   return (
     <>
       <header className={classes.header}>
         <h1 className={classes["website-name"]}>Quotes Website</h1>
         <nav className={classes.navigation}>
-          <Link className={classes["nav-link"]} to={"/quotes"}>
+          <NavLink
+            onClick={changeActiveHandler}
+            className={`${classes["nav-link"]} ${
+              active ? classes["active-link"] : ""
+            }`}
+            to={"/quotes"}
+          >
             All Quotes
-          </Link>
-          <Link className={classes["nav-link"]} to={"new-quote"}>
+          </NavLink>
+          <NavLink
+            onClick={changeActiveHandler}
+            className={`${classes["nav-link"]} ${
+              !active ? classes["active-link"] : ""
+            } `}
+            to={"/new-quote"}
+          >
             Add a Quote
-          </Link>
+          </NavLink>
         </nav>
       </header>
       {children}
