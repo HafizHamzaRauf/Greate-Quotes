@@ -1,0 +1,66 @@
+.quote-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  max-width: 60rem;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+
+.quote {
+  margin: 0 1rem;
+  background-color: rgb(41, 16, 16);
+  color: white;
+  flex-direction: column;
+  display: flex;
+  padding: 4rem 3rem;
+  justify-content: space-between;
+  gap: 2rem;
+  height: 20rem;
+  border-radius: 4px;
+}
+.quote-text {
+  font-size: 2rem;
+}
+.quote-author {
+  align-self: flex-end;
+  color: var(--primary-color);
+  font-size: 1.4rem;
+}
+
+.load {
+  color: var(--primary-color);
+  background-color: white;
+  border: none;
+  align-self: center;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+}
+.notFound {
+  text-align: center;
+  font-size: 2rem;
+}
+.load:hover {
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

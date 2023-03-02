@@ -1,0 +1,42 @@
+.single-quote {
+  background-color: aliceblue;
+  padding: 1.6rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  margin: 1rem;
+  overflow: scroll;
+  align-items: center;
+}
+.quote {
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.quote h2 {
+  font-size: 2rem;
+}
+.quote p {
+  font-size: 1.4rem;
+}
+
+.btn {
+  background-color: green;
+  color: white;
+  border: none;
+
+  padding: 1rem 2rem;
+}
+
+.btn:hover {
+  background-color: rgb(6, 160, 6);
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .single-quote {
+    flex-direction: column;
+  }
+}

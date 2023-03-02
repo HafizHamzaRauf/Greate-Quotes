@@ -1,0 +1,47 @@
+.form {
+  max-width: 60rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 4rem;
+  background-color: rgb(173, 180, 187);
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  gap: 1rem;
+  box-shadow: 1px 5px 23px -14px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 5px 23px -14px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 5px 23px -14px rgba(0, 0, 0, 0.75);
+}
+.input {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+.text {
+  height: 10rem;
+}
+
+.btn {
+  align-self: flex-end;
+  padding: 1rem 2rem;
+  background-color: green;
+  border: none;
+  color: white;
+  border-radius: 4px;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: rgb(39, 163, 39);
+}
+
+.error {
+  color: red;
+  align-self: flex-start;
+}
+
+@media (max-width: 550px) {
+  .form {
+    margin: 1rem;
+  }
+}
