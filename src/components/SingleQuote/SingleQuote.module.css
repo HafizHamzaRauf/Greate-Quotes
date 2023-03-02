@@ -5,11 +5,10 @@
   justify-content: space-between;
   gap: 4rem;
   margin: 1rem;
-  overflow: scroll;
+  overflow: auto;
   align-items: center;
 }
 .quote {
-  overflow-y: scroll;
   display: flex;
   flex-direction: column;
   gap: 2rem;
